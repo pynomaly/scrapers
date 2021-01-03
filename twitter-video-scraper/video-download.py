@@ -45,4 +45,4 @@ open(archive, "a").close()
 
 for link in video_links:
     print("Downloading link: " + link)
-    sh.youtube_dl("-o", download_dir + "Informativo_matinal_%(upload_date)s.%(ext)s", "--download-archive", archive, link)
+    sh.youtube_dl("-o", download_dir + "Informativo_matinal_%(upload_date)s.%(ext)s", "--download-archive", archive, link) # pylint: disable=no-member
